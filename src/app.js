@@ -4,10 +4,10 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/teste', (req, res) => {
+app.get('/test', (req, res) => {
   res
     .status(200)
-    .send({ mensagem: 'boas-vindas à API' });
+    .send({ message: 'welcome to the API' });
 });
 
 module.exports = app;
